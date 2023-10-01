@@ -1,0 +1,38 @@
+import 'package:flutter/material.dart';
+
+const Widget space0 = SizedBox();
+const Widget spaceW2 = SizedBox(width: 2);
+const Widget spaceW4 = SizedBox(width: 4);
+const Widget spaceW6 = SizedBox(width: 6);
+const Widget spaceW8 = SizedBox(width: 8);
+const Widget spaceW12 = SizedBox(width: 12);
+const Widget spaceW16 = SizedBox(width: 16);
+const Widget spaceW20 = SizedBox(width: 20);
+const Widget spaceW24 = SizedBox(width: 24);
+const Widget spaceW28 = SizedBox(width: 28);
+const Widget spaceW32 = SizedBox(width: 32);
+
+const Widget spaceH2 = SizedBox(height: 2);
+const Widget spaceH4 = SizedBox(height: 4);
+const Widget spaceH8 = SizedBox(height: 8);
+const Widget spaceH10 = SizedBox(height: 10);
+const Widget spaceH11 = SizedBox(height: 11);
+const Widget spaceH12 = SizedBox(height: 12);
+const Widget spaceH13 = SizedBox(height: 13);
+const Widget spaceH16 = SizedBox(height: 16);
+const Widget spaceH20 = SizedBox(height: 20);
+const Widget spaceH22 = SizedBox(height: 22);
+const Widget spaceH24 = SizedBox(height: 24);
+const Widget spaceH26 = SizedBox(height: 26);
+const Widget spaceH28 = SizedBox(height: 28);
+const Widget spaceH32 = SizedBox(height: 32);
+const Widget spaceH34 = SizedBox(height: 34);
+const Widget spaceH36 = SizedBox(height: 36);
+const Widget spaceH38 = SizedBox(height: 38);
+const Widget spaceH40 = SizedBox(height: 40);
+const Widget spaceH42 = SizedBox(height: 42);
+const Widget spaceH48 = SizedBox(height: 48);
+const Widget spaceH56 = SizedBox(height: 56);
+const Widget spaceH64 = SizedBox(height: 64);
+const Widget spaceH180 = SizedBox(height: 180);
+const Widget spaceH248 = SizedBox(height: 248);

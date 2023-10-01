@@ -1,0 +1,71 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DEV-debug",
+            "program": "${workspaceFolder}/lib/main-dev.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--debug",
+                "--flavor",
+                "dev",
+            ]
+        },
+        {
+            "name": "DEV-release",
+            "program": "${workspaceFolder}/lib/main-dev.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--release",
+                "--flavor",
+                "dev",
+            ]
+        },
+        {
+            "name": "LOCAL-debug",
+            "program": "${workspaceFolder}/lib/main-local.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--debug",
+                "--flavor",
+                "local",
+            ]
+        },
+        {
+            "name": "LOCAL-release",
+            "program": "${workspaceFolder}/lib/main-local.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--release",
+                "--flavor",
+                "local",
+            ]
+        },
+        {
+            "name": "PROD-debug",
+            "program": "${workspaceFolder}/lib/main-prod.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--debug",
+                "--flavor",
+                "prod",
+            ]
+        },
+        {
+            "name": "PROD-release",
+            "program": "${workspaceFolder}/lib/main-prod.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--release",
+                "--flavor",
+                "prod",
+            ]
+        },
+    ]
+}

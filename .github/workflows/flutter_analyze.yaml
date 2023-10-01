@@ -1,0 +1,59 @@
+# ワークフロー名
+name: flutter analyze
+
+# ジョブ実行トリガー
+on:
+  pull_request:
+    # プルリク作成時とプルリクへのコミット時に実行
+    types: [opened, synchronize]
+
+    # 実行対象ブランチ
+    branches:
+      - main
+      - develop
+
+  # ジョブ手動実行可
+  workflow_dispatch:
+
+# 環境変数
+env:
+  FLUTTER_VERSION: "3.10.6"
+
+# ジョブ内容
+jobs:
+  # ジョブ名
+  flutter_analyze:
+    # ジョブ実行環境
+    runs-on: ubuntu-latest
+
+    # タイムアウト時間
+    timeout-minutes: 10
+
+    # 実行アクション（steps配下）
+    # uses：GitHubやサードパーティで用意されたアクション
+    # run：実行コマンド
+    steps:
+      # リポジトリチェックアウト
+      - name: repository checkout
+        uses: actions/checkout@v2
+
+      # Flutterインストール（キャッシュ）
+      - name: flutter install
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+          cache-key: flutter
+          cache-path: ${{ runner.tool_cache }}/flutter
+
+      # Flutterバージョン確認
+      - name: flutter version
+        run: flutter --version
+
+      # Flutterパッケージインストール
+      - name: flutter pub get
+        run: flutter pub get
+
+      # 静的解析実行
+      - name: flutter analyze
+        run: flutter analyze

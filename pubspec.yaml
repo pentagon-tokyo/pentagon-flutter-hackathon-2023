@@ -1,0 +1,284 @@
+name: satorist
+description: template flutter
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+dependencies:
+  # オーディオ
+  audioplayers: ^5.1.0
+
+  # URLを使用した画像の取得
+  cached_network_image: ^3.0.0
+
+  # カメラ
+  camera: ^0.10.5+5
+
+  # http通信
+  dio: ^5.3.2
+
+  flutter:
+    sdk: flutter
+
+  # 環境変数
+  flutter_dotenv: ^5.1.0
+
+  flutter_flavor: ^3.0.1
+
+  # Gif
+  flutter_gif: ^0.0.4
+
+  # hooks
+  flutter_hooks: ^0.20.1
+
+  # キーボード表示検知
+  flutter_keyboard_visibility: ^5.2.0
+
+  # ローカル通知
+  flutter_local_notifications: ^15.1.1
+
+  # ローカライズ
+  flutter_localizations:
+    sdk: flutter
+
+  # レスポンシブ
+  flutter_screenutil: ^5.9.0
+
+  # セキュアな情報の管理
+  flutter_secure_storage: ^9.0.0
+
+  # for model
+  freezed_annotation: ^2.4.1
+
+  # ルーティング設定
+  go_router: ^10.1.2
+
+  # 顔認識
+  google_mlkit_face_detection: ^0.8.0
+
+  # hooks
+  hooks_riverpod: ^2.4.0
+
+  # image
+  image_picker: ^1.0.4
+
+  # Pagination
+  infinite_scroll_pagination: ^4.0.0
+
+  #DateFormat
+  intl: ^0.18.0
+
+  # for model
+  json_serializable:
+
+  # ローカライズ
+  localization: ^2.1.0
+
+  # ログ
+  logger: ^2.0.1
+
+  # アニメーション
+  lottie: ^2.6.0
+
+  # アプリ情報取得
+  package_info: ^2.0.2
+
+  # lint
+  pedantic_mono: ^1.17.0
+
+  # push通知のトークン取得
+  plain_notification_token: ^0.0.4
+
+  # SAHHA SDK
+  sahha_flutter: ^0.3.0
+
+  # 一時的な情報管理
+  shared_preferences:
+
+  # shimmerローディングUI
+  shimmer: ^3.0.0
+
+  # 動画
+  video_player: ^2.7.2
+
+  # WebView
+  webview_flutter: ^3.0.4
+
+dev_dependencies:
+  # fvm のエラー修正のために追加 https://github.com/rrousselGit/freezed/issues/293#issuecomment-721096608
+  analyzer:
+
+  # 自動生成に必要 コマンド → `fvm flutter pub run build_runner watch build --delete-conflicting-outputs`
+  build_runner: ^2.0.5
+
+  # 環境ごとにビルド設定を切り替える
+  # fvm flutter pub run flutter_flavorizr
+  flutter_flavorizr: ^2.0.0
+
+  # 画像ファイルのタイポを防ぐために、自動生成ツールを入れている https://github.com/FlutterGen/flutter_gen
+  flutter_gen:
+  flutter_gen_runner:
+
+  # アプリアイコン
+  # fvm flutter pub run flutter_launcher_icons:main
+  flutter_launcher_icons: ^0.13.1
+
+  # スプラッシュの簡易設定
+  # fvm flutter pub run flutter_native_splash:create
+  flutter_native_splash: ^2.2.9
+
+  # svg画像
+  flutter_svg: ^2.0.7
+
+  flutter_test:
+    sdk: flutter
+
+  # for model
+  freezed: ^2.4.1
+
+  template_flutter_name_change:
+    git:
+      url: https://github.com/pentagon-tokyo/template-flutter-name-change.git
+      ref: main
+
+flutter_gen:
+  output: lib/util/gen/ # Optional (default: lib/gen/)
+  integrations:
+    flutter_svg: true
+
+flutter_icons:
+  ios: true
+  android: true
+  image_path: "assets/icon/app_icon.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/audio/
+    - assets/fonts/
+    - assets/icon/
+    - assets/image/
+    - assets/json/
+    - assets/gif/
+    - .env
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Black.ttf
+          weight: 900
+    # NotoSansJPのweightがずれているのは仕様
+    # Robotoと無理矢理合わせている
+    - family: NotoSansJP
+      fonts:
+        - asset: assets/fonts/NotoSansJP-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/NotoSansJP-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/NotoSansJP-Light.ttf
+          weight: 300
+        - asset: assets/fonts/NotoSansJP-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/NotoSansJP-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSansJP-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/NotoSansJP-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSansJP-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/NotoSansJP-Black.ttf
+          weight: 900
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_native_splash:
+  image: "assets/image/splash.png"
+  color: "#000000"
+  image_dark: "assets/image/splash.png"
+  color_dark: "#000000"
+  fill: false
+  android: true
+  android_12:
+    image: "assets/image/splash.png"
+    icon_background_color: "#000000"
+    image_dark: "assets/image/splash.png"
+    icon_background_color_dark: "#000000"
+
+# Flavorの設定
+flavorizr:
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+    ios:
+
+  #注)ApplicationIdにハイフンは含められない
+  #注)bundleIdにアンダーバーは含められない
+  flavors:
+    local:
+      app:
+        name: "SATORIST"
+      android:
+        applicationId: "com.pentagon.satorist"
+      ios:
+        bundleId: "com.pentagon.satorist"
+    dev:
+      app:
+        name: "SATORIST"
+      android:
+        applicationId: "com.pentagon.satorist"
+      ios:
+        bundleId: "com.pentagon.satorist"
+    prod:
+      app:
+        name: "SATORIST"
+      android:
+        applicationId: "com.pentagon.satorist"
+      ios:
+        bundleId: "com.pentagon.satorist"

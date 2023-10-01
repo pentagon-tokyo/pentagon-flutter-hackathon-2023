@@ -1,0 +1,58 @@
+{
+    "dart.flutterSdkPath": ".fvm/flutter_sdk",
+    "debug.openDebug": "openOnDebugBreak",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false,
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "git.autoRepositoryDetection": false,
+    "cSpell.words": [
+        "audioplayers",
+        "autofocus",
+        "autovalidate",
+        "bgra",
+        "COCOAPODS",
+        "cupertino",
+        "dotenv",
+        "firestore",
+        "flavorizr",
+        "FMDB",
+        "gapless",
+        "logger",
+        "LTRB",
+        "mlkit",
+        "noto",
+        "RGBO",
+        "roboto",
+        "PODFILE",
+        "prefs",
+        "riverpod",
+        "sahha",
+        "satorist",
+        "satottane",
+        "Schyler",
+        "screenutil",
+        "signup",
+        "sqflite",
+        "syutyu",
+        "unfocus",
+        "unsubscription",
+        "vsync",
+        "webp",
+        "wkwebview",
+    ],
+}

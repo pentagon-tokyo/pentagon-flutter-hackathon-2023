@@ -1,0 +1,61 @@
+{
+  "inferences": [
+    {
+      "id": "26051AB2-867F-4F8D-B134-0031C20D3FDC",
+      "type": "stress_resilience",
+      "state": "low",
+      "score": 0.34,
+      "factors": {
+        "sleep_routine": 0.22,
+        "sleep_regularity": -0.23,
+        "daily_steps": 0.17,
+        "total_sleep_time": 0.28,
+        "sleep_debt": -0.13
+      },
+      "inputData": ["age", "sleep", "steps", "heart_rate"]
+    },
+    {
+      "id": "601ADC2F-4830-45E7-B538-F7821EC009EA",
+      "type": "depression_resilience",
+      "state": "minimal",
+      "score": 0.14,
+      "factors": {
+        "sleep_routine": 0.12,
+        "sleep_regularity": -0.08,
+        "daily_steps": 0.05,
+        "total_sleep_time": 0.15,
+        "sleep_debt": -0.11
+      },
+      "inputData": ["age", "sleep", "steps"]
+    },
+    {
+      "id": "601ADC2F-4830-45E7-B538-F7821EC009EA",
+      "type": "anxiety_resilience",
+      "state": "medium",
+      "score": 0.62,
+      "factors": {
+        "sleep_routine": 0.51,
+        "sleep_regularity": 0.11,
+        "daily_activity": 0.22,
+        "total_sleep_time": 0.13,
+        "sleep_debt": 0.14
+      },
+      "inputData": ["age", "sleep", "steps", "screen"]
+    },
+    {
+      "id": "acde070d-8c4c-4f0d-9d8a-162843c10333",
+      "type": "sleep",
+      "state": "high",
+      "score": 0.75,
+      "factors": {
+        "sleep_routine": 0.013,
+        "sleep_regularity": 0.11,
+        "night_time_activity": 0.005,
+        "total_sleep_time": -0.03,
+        "sleep_debt": -0.023
+      },
+      "inputData": ["age", "gender", "sleep", "activity"]
+    }
+  ],
+  "createdAt": "2023-07-31T12:00:35+12:00"
+}
